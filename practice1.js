@@ -16,23 +16,21 @@
 // 출력: {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'W': 1, 'r': 1, 'd': 1}
 
 function countCharacters(s) {
-    // 정답을 출력할 오브젝트 하나 선언 해놓자! {}
-    // 문자열을 앞에서부터 하나씩 순회하는 로직
-        // 순회하는 문자열이 출력할 오브젝트에 들어있지 않으면 추가를 해준다 {문자열 : 1}
-        // 이미 해당 문자열이 출력할 오브젝트에 있다면   ->   { 그 문자열 : 2} + 1
-        // 대소문자 합쳐주는 로직을 빼먹었구나...
-    // 리턴 맨위에 선언해 둔 오브젝트
-
+  //  변수 선언
     const result = {};
-    for (let i; i < s.length; i++) {
-        if (!result[s[i]]) {
-            result[s[i]] = 1;
-        } else {
-            result[s[i]] = result[s[i]] + 1;
-        }
+  //  반복적인 구간을 설정
+  for (let i; i < s.length; i++) {
+  // 조건을 줄 수 있는 로직을 설정( 매개변수 s의 데이터 길이만큼 순회한다)
+  if (!result[s[i]]) {      result[s[i]] = 1;
+  // 조건을 받아 들였을 경우의 값과 아닌 값을 설정하여 값을 도출해준다.
+  // (s의 i번째 값이 result의 결과값이 아니라면 1을 result에 저장한다)
+  } else {
+  result[s[i]] = result[s[i]] + 1;
+  //  그렇지 않을 경우엔 s의 i 번째 값 +1을 해준 값이 결과 값으로 나온다
+      }
     }
     return result;
-}
+  }
 
 // 테스트 코드
 function testCountCharacters() {

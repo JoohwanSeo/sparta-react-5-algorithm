@@ -33,24 +33,6 @@ function mostFrequentChar(s) {
     }
   }
   return mostFrequent;
-
-  //   const obj = { mostcount: 0, mostFrequent: "" };
-
-  //   for (let i = 0; i < s.length; i++) {
-  //     if (s[i] === "") {
-  //       continue;
-  //     }
-  //     if (!obj[s[i]]) {
-  //       obj[s[i]] = 1;
-  //     }
-  //     obj[s[i]]++;
-
-  //     if (obj[s[i]] > obj.mostcount) {
-  //       obj.mostcount = obj[s[i]];
-  //       ovj.mostFrequent = s[i];
-  //     }
-  //   }
-  //   return obj.mostFrequent;
 }
 
 // 테스트 코드
