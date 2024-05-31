@@ -30,6 +30,27 @@ function isAnagram(a, b) {
   const bArr = b.toLowerCase().split("").sort().join("");
 
   return aArr === bArr;
+
+
+  // const newA = a.replace(/ /g, "").toLowerCase();
+  //   const newB = b.replace(/ /g, "").toLowerCase();
+  //   if (newA.length !== newB.length) {
+  //     return false;
+  //   }
+  //   const charCountA = {};
+  //   const charCountB = {};
+  //   for (let char of newA) {
+  //     charCountA[char] = (charCountA[char] || 0) + 1;
+  //   }
+  //   for (let char of newB) {
+  //     charCountB[char] = (charCountB[char] || 0) + 1;
+  //   }
+  //   for (let char in charCountA) {
+  //     if (charCountA[char] !== charCountB[char]) {
+  //       return false;
+  //     }
+  //   }
+  //   return true;
 }
 
 // 테스트 코드
