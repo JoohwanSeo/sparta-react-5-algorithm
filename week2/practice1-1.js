@@ -26,7 +26,7 @@ function isSubstring(s1, s2) {
     }
   }
 
-  return false;
+
 }
 
 // 테스트 코드
